@@ -1,0 +1,180 @@
+/* ✅ FONT GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌈 BODY */
+body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🟥 HEADER */
+header {
+    background: #d60000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header table {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+}
+
+header td {
+    padding: 4px 10px;
+}
+
+/* 📌 LINK NAVIGASI & BUTTON TAMBAH */
+.btn-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    background: #d60000;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background: #a30000;
+}
+
+/* 📋 TABEL DATA */
+.data-table {
+    width: 90%;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.data-table thead {
+    background: #d60000;
+    color: white;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table tr:hover {
+    background: #fff4f4;
+}
+
+.data-table a {
+    text-decoration: none;
+    color: #d60000;
+    font-weight: 600;
+}
+
+.data-table a:hover {
+    color: #a30000;
+    text-decoration: underline;
+}
+
+/* 📑 FORM INPUT (Tambah/Edit) */
+.form-input {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #d60000;
+}
+
+.form-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-input input[type="text"]:focus {
+    border-color: #d60000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(214, 0, 0, 0.2);
+}
+
+/* 🔘 BUTTON SIMPAN & UPDATE */
+.btn {
+    background: #d60000;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a30000;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header table {
+        font-size: 14px;
+    }
+
+    .data-table, 
+    .form-input {
+        width: 95%;
+    }
+
+    .data-table th, 
+    .data-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .data-table th, 
+    .data-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .form-input input[type="text"] {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
